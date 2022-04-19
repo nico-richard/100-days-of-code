@@ -39,7 +39,7 @@ def check_if_in_country(lat, long):
 
     params = {
         'latlng': f'{lat},{long}',
-        'key': "AIzaSyCfCRtGsfCjToANLElqXtu_gH1y2fxKIlg",
+        'key': "",
     }
 
     response = requests.get(url, params=params)
