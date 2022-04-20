@@ -1,6 +1,5 @@
 from tkinter import *
 
-from pyparsing import col
 import requests
 
 def get_quote():
