@@ -55,7 +55,8 @@ class Quizz:
         response = requests.get(url=self.trivia_db_url, params=self.trivia_params)
         data = response.json()
         answer = data['results'][0]['correct_answer']
-        question = html.unescape(data['results'][0]['question']) + '\nAnswer : ' + answer
+        # question = html.unescape(data['results'][0]['question']) + '\n(Answer : ' + answer + ')'
+        question = html.unescape(data['results'][0]['question'])
         self.canvas.itemconfig(self.question, text=question)
         return answer
 
