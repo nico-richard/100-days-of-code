@@ -59,7 +59,7 @@ while True:
     distance = sqrt((iss_latitude - MY_LAT) ** 2 + (iss_longitude - MY_LONG) ** 2)
 
     if now < sunrise or now > sunset:
-        if (MY_LAT - 1 < iss_latitude < MY_LAT + 1) and (MY_LONG - 1 < iss_longitude < MY_LONG + 1):
+        if (MY_LAT - 5 < iss_latitude < MY_LAT + 5) and (MY_LONG - 5 < iss_longitude < MY_LONG + 5):
             print('The ISS is close to me and it\'s dark, I can see it')
         else:
             # print(f'LAT diff = {round(abs(iss_latitude - MY_LAT), 2)}, LONG diff = {round(abs(iss_longitude - MY_LONG), 2)}')
