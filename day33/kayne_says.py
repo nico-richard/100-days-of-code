@@ -27,4 +27,3 @@ canvas_quote.grid(row=0, column=0)
 button_kanye.grid(row=1, column=0)
 
 window.mainloop()
-print('yo')
