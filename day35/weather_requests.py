@@ -1,6 +1,6 @@
 import requests
 import datetime as dt
-import config
+import config.config as config
 
 # # Current weather ----------------------------------------------------
 # url = 'https://api.openweathermap.org/data/2.5/weather'

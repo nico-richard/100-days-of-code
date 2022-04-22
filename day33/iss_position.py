@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import time
 from math import sqrt
-import config
+import config.config as config
 
 MY_LAT = 45.194260
 MY_LONG = 5.731670

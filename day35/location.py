@@ -1,5 +1,5 @@
 import requests
-import config
+import config.config as config
 
 # Current location  ----------------------------------------------------
 url = 'http://api.openweathermap.org/geo/1.0/reverse'
