@@ -2,6 +2,7 @@ import requests
 from datetime import datetime
 import time
 from math import sqrt
+import config
 
 MY_LAT = 45.194260
 MY_LONG = 5.731670
@@ -39,7 +40,7 @@ def check_if_in_country(lat, long):
 
     params = {
         'latlng': f'{lat},{long}',
-        'key': "",
+        'key': config.google_api_key,
     }
 
     response = requests.get(url, params=params)

@@ -1,11 +1,12 @@
 import requests
 import datetime as dt
+import config
 
 # # Current weather ----------------------------------------------------
 # url = 'https://api.openweathermap.org/data/2.5/weather'
 # parameters = {
 #     'q': 'grenoble',
-#     'appid': 'a0fb0b7788f77a45fa4dda8b20f5643a'
+#     'appid': config.weather_api_key,
 # }
 # # --------------------------------------------------------------------
 
@@ -14,7 +15,7 @@ url = 'https://api.openweathermap.org/data/2.5/onecall'
 parameters = {
     'lat': 45.194260,
     'lon': 5.731670,
-    'appid': 'a0fb0b7788f77a45fa4dda8b20f5643a',
+    'appid': config.weather_api_key,
     'exclude': 'current, minutely, daily, alerts'
 }
 # --------------------------------------------------------------------
