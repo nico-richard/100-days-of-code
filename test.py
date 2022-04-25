@@ -12,14 +12,42 @@ headers = {
     'Content-Type': 'application/json',
 }
 
+params = {"id": 3788}
+
 transport = AIOHTTPTransport(url=url, headers=headers)
 client = Client(transport=transport)
 
-query = gql("""query Tikee($id: Int!) {  tikee(id: $id) {    id    uuid    serialNumber    sdFreeSpace    uploadState    lastFirmwareVersion    statusUploadedAt    tikeeLocation    mcuFirmwareRevision    mobileLocation    monthlySmsSendingCount    simPhoneNumber    wakeUpOnDemandAction    wakeUpOnDemandCalledAt    geolocation    energySaver    isUpdated    uploadMode    uploadModeThreshold    tzOffset    wakeUpOnDemandVideoSensor    wakeUpOnDemandCalledAt    ...CapabilityValues    ...NetworkQuality    ...LteConnectionInfos    ...LongSequences    ...ShortSequences    ...LastSequence    ...RollingStatus    ...AlwaysOnTriggers    __typename  }}""")
-
-params = {"id": 6009}
+query = gql("""query Tikee($id: Int!) {
+    tikee(id: $id) {
+        id
+        uuid
+        serialNumber
+        sdFreeSpace
+        uploadState
+        lastFirmwareVersion
+        statusUploadedAt
+        tikeeLocation
+        mcuFirmwareRevision
+        mobileLocation
+        monthlySmsSendingCount
+        simPhoneNumber
+        wakeUpOnDemandAction
+        wakeUpOnDemandCalledAt
+        geolocation
+        energySaver
+        isUpdated
+        uploadMode
+        uploadModeThreshold
+        tzOffset
+        wakeUpOnDemandVideoSensor
+        wakeUpOnDemandCalledAt
+        __typename
+        }
+    }""")
 
 response = client.execute(query, variable_values=params)
 
-for key in response['tikee'].keys():
-    print(key)
+# print(response)
+
+for key, value in response['tikee'].items():
+    print(f'{key} : {value}')
