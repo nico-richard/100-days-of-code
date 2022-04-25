@@ -91,5 +91,9 @@ class Quizz:
     def mainloop(self):
         self.window.mainloop()
 
-quizz = Quizz()
-quizz.mainloop()
+def main():
+    quizz = Quizz()
+    quizz.mainloop()
+
+if __name__ == '__main__':
+    main()

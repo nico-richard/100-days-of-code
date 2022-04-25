@@ -1,9 +1,10 @@
 import requests
 import datetime as dt
 from twilio.rest import Client
+import config.config as config
 
-account_sid = 'ACc26a38a2609649a63cbd67130f12be4c'
-auth_token = 'ff10a998a8c1cb3b0cdcc2bbb68e49af'
+account_sid = config.twilio_account_sid
+auth_token = config.auth_token
 
 client = Client(account_sid, auth_token)
 

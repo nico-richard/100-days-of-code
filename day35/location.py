@@ -1,11 +1,12 @@
 import requests
+import config.config as config
 
 # Current location  ----------------------------------------------------
 url = 'http://api.openweathermap.org/geo/1.0/reverse'
 parameters = {
     'lat': '47.01',
     'lon': '4.83',
-    'appid': 'a0fb0b7788f77a45fa4dda8b20f5643a'
+    'appid': config.weather_api_key,
 }
 # --------------------------------------------------------------------
 
