@@ -1,7 +1,8 @@
 from calendar import day_abbr
 import requests
 import sys
-sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
+# sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
+sys.path.insert(1, r'C:\Users\33638\OneDrive\Bureau\PYTHON\100-days-of-code')
 import config.config as config
 import datetime as dt
 
@@ -28,21 +29,25 @@ def get_stock_difference(STOCK_NAME):
     days_before = 0 if (NOW.hour > 16) else 1
 
     d_1 = NOW.date() - dt.timedelta(days=days_before)
-    d_2 = NOW.date() - dt.timedelta(days=days_before + 1)
+
+    if d_1.weekday() == 0: #monday
+        d_1 -= dt.timedelta(days=3) #friday
+
+    d_2 = d_1 - dt.timedelta(days=1)
 
     d_1_data = stock_data['Time Series (Daily)'][f'{d_1}']
     d_2_data = stock_data['Time Series (Daily)'][f'{d_2}']
 
-    return round((float(d_1_data['1. open']) - float(d_2_data['1. open'])) / float(d_1_data['1. open']) * 100, 2) 
+    return round((float(d_1_data['1. open']) - float(d_2_data['1. open'])) / float(d_1_data['1. open']) * 100, 2), d_1, d_2
 
-stock_diff = get_stock_difference(STOCK_NAME)
+stock_diff, d_1, d_2 = get_stock_difference(STOCK_NAME)
 
-# print(f'{stock_diff} %')
+print(f'----- {stock_diff} % between {d_2} and {d_1} -----\n')
 
 if abs(stock_diff) >= 5:
-    pass
+    print('The absolute stock diff was > 5%\n')
 else:
-    pass
+    print('The absolute stock diff was < 5%\n')
 
 ## STEP 2: Use https://newsapi.org
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
@@ -59,7 +64,10 @@ def get_news_from(COMPANY_NAME):
     return news_data
 
 news_data = get_news_from(COMPANY_NAME)
-print(news_data)
+for article in news_data['articles']:
+    for key, value in article.items():
+        print(f'{key} \t: {value}')
+    print('\n -------------------------------------------- \n')
 
 ## STEP 3: Use https://www.twilio.com
 # Send a seperate message with the percentage change and each article's title and description to your phone number. 
