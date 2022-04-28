@@ -1,8 +1,8 @@
 from calendar import day_abbr
 import requests
 import sys
-# sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
-sys.path.insert(1, r'C:\Users\33638\OneDrive\Bureau\PYTHON\100-days-of-code')
+sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
+# sys.path.insert(1, r'C:\Users\33638\OneDrive\Bureau\PYTHON\100-days-of-code')
 import config.config as config
 import datetime as dt
 
@@ -26,15 +26,15 @@ def get_stock_difference(STOCK_NAME):
     stock_response.raise_for_status()
     stock_data = stock_response.json()
 
-    days_before = 0 if (NOW.hour > 16) else 1
+    days_before = 1 if (NOW.hour > 16) else 1
 
     d_1 = NOW.date() - dt.timedelta(days=days_before)
 
     if d_1.weekday() == 0: #monday
-        d_1 -= dt.timedelta(days=3) #friday
-
-    d_2 = d_1 - dt.timedelta(days=1)
-
+        d_2 = d_1 - dt.timedelta(days=3) #friday
+    else:
+        d_2 = d_1 - dt.timedelta(days=1)
+    
     d_1_data = stock_data['Time Series (Daily)'][f'{d_1}']
     d_2_data = stock_data['Time Series (Daily)'][f'{d_2}']
 
@@ -43,11 +43,6 @@ def get_stock_difference(STOCK_NAME):
 stock_diff, d_1, d_2 = get_stock_difference(STOCK_NAME)
 
 print(f'----- {stock_diff} % between {d_2} and {d_1} -----\n')
-
-if abs(stock_diff) >= 5:
-    print('The absolute stock diff was > 5%\n')
-else:
-    print('The absolute stock diff was < 5%\n')
 
 ## STEP 2: Use https://newsapi.org
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME. 
@@ -63,11 +58,20 @@ def get_news_from(COMPANY_NAME):
     news_data = news_response.json()
     return news_data
 
-news_data = get_news_from(COMPANY_NAME)
-for article in news_data['articles']:
-    for key, value in article.items():
-        print(f'{key} \t: {value}')
-    print('\n -------------------------------------------- \n')
+if abs(stock_diff) >= 5:
+    print('The absolute stock diff was > 5%\n')
+    news_data = get_news_from(COMPANY_NAME)
+
+    print(f'Article(s) found : {news_data["totalResults"]}')
+
+    if news_data["totalResults"]:
+        for article in news_data['articles']:
+            for key, value in article.items():
+                print(f'{key} \t: {value}')
+else:
+    print('The absolute stock diff was < 5%\n')
+
+print('----------------------------------------------------')
 
 ## STEP 3: Use https://www.twilio.com
 # Send a seperate message with the percentage change and each article's title and description to your phone number. 
