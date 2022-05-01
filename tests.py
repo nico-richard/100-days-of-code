@@ -1,5 +1,3 @@
-import datetime as dt
+import urllib.request
 
-now = dt.datetime.now()
-
-print(now.weekday())
+print(urllib.request.getproxies())
