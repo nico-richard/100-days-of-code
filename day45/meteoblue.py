@@ -3,7 +3,7 @@ import requests
 import webbrowser
 import sys
 # sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
-# import config.config as config
+import config.config as config
 import json
 
 response = requests.get('https://www.meteoblue.com/fr/meteo/prevision/meteograms/grenoble_france_3014728')
@@ -19,8 +19,7 @@ data = requests.get(meteogram_url)
 # with open('meteogram.png', 'wb') as file:
 #     file.write(data.content)
 
-# slack_url = config.slack_url
-slack_url = 'https://hooks.slack.com/services/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'
+slack_url = config.slack_url
 channel = '#D01E78XTALD'
 message = {
     # "channel": channel,
