@@ -13,15 +13,22 @@ soup = BeautifulSoup(html_data, 'html.parser')
 
 meteogram_url = 'http:' + soup.find(class_='image-lazyload').get('data-original')
 
-data = requests.get(meteogram_url)
+update_time = soup.find(class_='current-description').find('span').text
 
+current_temp = soup.find(class_='h1 current-temp').text.strip()
+
+current_picto_url = str(soup.find(class_='current-picto').find('img').get('src'))
+current_picto_url = current_picto_url.replace('.svg', '.png')
+
+## Save meteogram.png
+# data = requests.get(meteogram_url)
 # webbrowser.open('http://' + meteogram)
 # with open('meteogram.png', 'wb') as file:
 #     file.write(data.content)
 
 slack_url = config.slack_url
 channel = '#D01E78XTALD'
-headers = {'Content-type': 'application/json'}
+# headers = {'Content-type': 'application/json'}
 message = {
     # "channel": channel,
 	"blocks": [
@@ -31,6 +38,22 @@ message = {
 				"type": "plain_text",
 				"text": "Meteo for the next 5 days :"
 			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": f"Updated time : {update_time}, current temp : {current_temp}"
+			}
+		},
+		{
+			"type": "image",
+			"title": {
+				"type": "plain_text",
+				"text": "current weather"
+			},
+			"image_url": current_picto_url,
+			"alt_text": "current weather image"
 		},
 		{
 			"type": "image",
@@ -44,5 +67,5 @@ message = {
 	]
 }
 
-response = requests.post(slack_url, headers=headers, data=json.dumps(message))
+response = requests.post(slack_url, data=json.dumps(message))
 response.raise_for_status()
