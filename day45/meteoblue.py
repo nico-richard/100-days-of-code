@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import webbrowser
 import sys
-# sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
+sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
 import config.config as config
 import json
 
@@ -21,6 +21,7 @@ data = requests.get(meteogram_url)
 
 slack_url = config.slack_url
 channel = '#D01E78XTALD'
+headers = {'Content-type': 'application/json'}
 message = {
     # "channel": channel,
 	"blocks": [
@@ -43,5 +44,5 @@ message = {
 	]
 }
 
-response = requests.post(slack_url, data=json.dumps(message))
+response = requests.post(slack_url, headers=headers, data=json.dumps(message))
 response.raise_for_status()
