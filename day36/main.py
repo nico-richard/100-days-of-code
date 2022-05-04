@@ -1,4 +1,3 @@
-from calendar import day_abbr
 import requests
 import sys
 sys.path.insert(1, r'C:\Users\nicol\Desktop\100 days of code')
