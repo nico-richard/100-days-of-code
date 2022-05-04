@@ -17,3 +17,4 @@ web scraping with bs4
 html, css
 graphql query and mutations with gql library
 web app with flask library
+version control with git, github
