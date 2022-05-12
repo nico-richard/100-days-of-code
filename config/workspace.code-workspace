@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\enlaps_python"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onFocusChange"
+	}
+}
