@@ -1,0 +1,19 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    background-color: coral;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+li,
+p {
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    margin: 20px 5px;
+    padding: 10px;
+    display: table;
+    color: white;
+}
