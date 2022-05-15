@@ -1,13 +1,24 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Success</title>
-</head>
-<body>
-	<div class="container">
-		<h1>Top Secret </h1>
-		<iframe src="https://giphy.com/embed/Ju7l5y9osyymQ" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-		<p><a href="https://giphy.com/gifs/rick-astley-Ju7l5y9osyymQ">via GIPHY</a></p>
-	</div>
-</body>
-</html>
+{% extends "index.html" %}
+
+{% block title %} Success {% endblock %}
+{% block css %}
+{{ super() }}
+<style>
+	h1 {
+		color: green;
+	}
+</style>
+{% endblock %}
+
+{% block container %}
+<h1>Successfully logged in</h1>
+<iframe
+  src="https://giphy.com/embed/Ju7l5y9osyymQ"
+  width="480"
+  height="360"
+  frameborder="0"
+  class="giphy-embed"
+  allowfullscreen
+></iframe>
+<p><a href="https://giphy.com/gifs/rick-astley-Ju7l5y9osyymQ">via GIPHY</a></p>
+{% endblock %}
