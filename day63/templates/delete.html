@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Library</title>
+    <title>Delete a book ?</title>
 </head>
 
 <body>
-    <h1>My Library</h1>
+    <h1>Delete books ?</h1>
     {% if books %}
     <ul>
         {% for book in books %}
         <li>
+            <form action="{{ url_for('delete') }}" method="POST">
+                <button type="submit">Delete Book</button>
+            </form>
             {{ book.title }} - {{ book.author }} - {{ book.rating }}/10
         </li>
         {% endfor %}
@@ -19,8 +22,6 @@
     {% else %}
     <p>Library is empty</p>
     {% endif %}
-
-    <a href="{{ url_for('add') }}">Add New Book</a>
 </body>
 
 </html>
