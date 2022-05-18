@@ -48,12 +48,6 @@ def add():
     return render_template('add.html')
 
 
-@app.route('/del', methods=['POST', 'GET'])
-def delete():
-    if request.method == 'POST':
-        book_to_delete = request.form['book']
-        print(f'You want to delete book {book_to_delete}')
-
 @app.route('/delete')
 def list_del():
     all_books = db.session.query(Book).all()
