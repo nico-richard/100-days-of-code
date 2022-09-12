@@ -15,7 +15,7 @@ h1 {
   color: #483838;
 }
 
-ul {
+.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -77,4 +77,19 @@ li a:hover:not(.tree, .title) {
 .flash {
   right: auto;
   left: 10px;
+}
+
+.get-db {
+  position: relative;
+  top: 150px;
+  display: flex;
+}
+
+.db-data {
+  right: 10px;
+  text-align: left;
+}
+
+ul {
+  margin-top: 0px;
 }

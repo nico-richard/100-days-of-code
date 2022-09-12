@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
     <title>Randopost</title>
 </head>
 
@@ -39,15 +40,38 @@
     <h1>Welcome to the {{ page_name }} page</h1>
     {% endif %}
 
-    {% if user and user.is_authenticated %}
+    {% if user and current_user.is_authenticated %}
     <h1 class="warning">You are already logged in</h1>
     {% endif %}
-
+    
+    {% if form and not current_user.is_authenticated %}
     <div class="form">
-        {% if form and not user.is_authenticated %}
         {{ wtf.quick_form(form) }}
+    </div>
+    {% endif %}
+
+    {% if page_name == 'post' %}
+    <div class="form">
+        {{ wtf.quick_form(form) }}
+    </div>
+    {% endif %}
+
+    <div class="get-db" id="db_data">
+        <form action="/get_db" method="post">
+            <button>Get DB</button>
+        </form>
+        {% if db_data %}
+        <div class="db-data">
+            <ul>
+                {% for data in db_data %}
+                <li>{{ data }}</li>
+                <br>
+                {% endfor %}
+            </ul>
+            </div>
         {% endif %}
     </div>
+    <!-- <button onclick="trig_db()">Trig db</button> -->
 
 </body>
 
