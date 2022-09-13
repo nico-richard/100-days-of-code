@@ -30,7 +30,7 @@ li {
   border-right: 1px solid #D2D79F;
 }
 
-li a, .topnav-item {
+.topnav-item {
   display: block;
   color: #90b77d;
   text-align: center;
@@ -92,4 +92,54 @@ li a:hover:not(.tree, .title) {
 
 ul {
   margin-top: 0px;
+}
+
+.post {
+  background-color: #90b77d;
+  padding: 10px;
+  border-radius: 5px;
+  width: 70%;
+  text-align: left;
+  color: #483838;
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post a {
+  /* text-decoration: none; */
+  color: #483838;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+}
+
+img {
+  width: (100% - 40px);
+  border-radius: 5px;
+  margin: 10px;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+.editing-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

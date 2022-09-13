@@ -13,16 +13,17 @@
 <body>
     <ul class="topnav">
         <!-- <li><a class="tree">🌲</a></li> -->
-        <li><a class="title" href="{{ url_for('home') }}">Randopost</a></li>
-        <li><a href="{{ url_for('randos') }}">Randos</a></li>
-        <li><a href="{{ url_for('post') }}">Post</a></li>
-        <li class="push"><a href="{{ url_for('about') }}">About</a></li>
+        <li><a class="title topnav-item" href="{{ url_for('home') }}">Randopost</a></li>
+        <li><a class="topnav-item" href="{{ url_for('all_posts') }}">All Posts</a></li>
+        <li><a class="topnav-item" href="{{ url_for('post') }}">New Post</a></li>
+        <li class="push"><a class="topnav-item" href="{{ url_for('about') }}">About</a></li>
         {% if current_user.is_authenticated %}
-        <li class="push"><a href="{{ url_for('logout') }}">Log out</a></li>
+        <li class="push"><a class="topnav-item" href="{{ url_for('logout') }}">Log out</a></li>
+        <li class="push"><a class="topnav-item" href="{{ url_for('my_posts') }}">My Posts</a></li>
         {% endif %}
         {% if not current_user.is_authenticated %}
-        <li class="push"><a href="{{ url_for('login') }}">Log in</a></li>
-        <li class="push"><a href="{{ url_for('register') }}">Register</a></li>
+        <li class="push"><a class="topnav-item" href="{{ url_for('login') }}">Log in</a></li>
+        <li class="push"><a class="topnav-item" href="{{ url_for('register') }}">Register</a></li>
         {% endif %}
     </ul>
 
@@ -43,7 +44,7 @@
     {% if user and current_user.is_authenticated %}
     <h1 class="warning">You are already logged in</h1>
     {% endif %}
-    
+
     {% if form and not current_user.is_authenticated %}
     <div class="form">
         {{ wtf.quick_form(form) }}
@@ -53,6 +54,31 @@
     {% if page_name == 'post' %}
     <div class="form">
         {{ wtf.quick_form(form) }}
+    </div>
+    {% endif %}
+
+    <ul class="post-list">
+        {% for post in posts %}
+        <li class="post">
+            <h3>Post {{ post.id }} : <b>{{ post.title }}</b> posted on {{ post.creation_date.strftime('%d %B %Y') }}
+                <br><i>posted by user {{ post.author }}</i></h3>
+            <div class="likes">Likes : {{ post.likes }}</div>
+            <img src="../static/images/{{ post.image }}" alt="no image">
+            <div class="editing-buttons">
+                <a href="{{ url_for('delete_post', post_id=post.id) }}">delete post</a>
+                <a href="{{ url_for('add_like', post_id=post.id) }}">like post</a>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% if page_name == 'upload' %}
+    <div>
+        <form enctype="multipart/form-data" method="post" class="upload-form" action="/upload_image">
+            <label for="upload_input">Upload image here</label>
+            <input type="file" name="upload_input" name="img" alt="upload here" accept=".jpg">
+            <button type="submit">Submit image</button>
+        </form>
     </div>
     {% endif %}
 
@@ -68,7 +94,7 @@
                 <br>
                 {% endfor %}
             </ul>
-            </div>
+        </div>
         {% endif %}
     </div>
     <!-- <button onclick="trig_db()">Trig db</button> -->
