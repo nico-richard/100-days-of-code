@@ -5,6 +5,11 @@
 
 **100 Days of Code** is a Python course that can be found on Udemy. The objective is to master Python by building 100 projects over 100 days.
 
+---
+**_NOTE :_** Some days are missing because of clustering several projects. Days 1 to 16 have been skipped as they were basic knowledge already learnt.
+
+---
+
 ### Technologies Used
 
 - Python
