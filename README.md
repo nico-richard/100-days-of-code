@@ -69,7 +69,7 @@ The objective is to master Python by building 100 projects over 100 days.
 -   [Day 55:](https://github.com/nico-richard/100-days-of-code/tree/master/day55) HTML & URL Parsing in Flask and the Higher Lower Game
 -   [Day 56:](https://github.com/nico-richard/100-days-of-code/tree/master/day56) Rendering HTML/Static Files and Using Website Templates
 -   [Day 57:](https://github.com/nico-richard/100-days-of-code/tree/master/day57) Templating with Jinja in Flask Applications
--   Day 58: Web Foundation Boostrap (skipped)
+-   Day 58: TODO Web Foundation Boostrap
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,8 +170,27 @@ The objective is to master Python by building 100 projects over 100 days.
 ## Roadmap
 
 Finish 100% 🏁
+Overall : ![65%](https://progress-bar.dev/65/)
 
--   ![72%](https://progress-bar.dev/72/) Finish every project
+### Beginner
+
+![100%](https://progress-bar.dev/100/) Learnt !
+
+### Intermediate
+
+![100%](https://progress-bar.dev/100/) Done !
+
+### Intermediate+
+
+![77%](https://progress-bar.dev/77/) 20/26
+
+### Advanced
+
+![59%](https://progress-bar.dev/59/) 13/22
+
+### Professionnal
+
+![0%](https://progress-bar.dev/0/) 0/20
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
