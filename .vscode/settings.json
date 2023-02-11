@@ -1,7 +1,0 @@
-{
-    "files.autoSave": "onFocusChange",
-    "editor.codeActionsOnSave": {
-    
-    },
-    "python.formatting.provider": "autopep8"
-}
