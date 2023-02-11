@@ -48,51 +48,55 @@ The objective is to master Python by building 100 projects over 100 days.
 -   [Day 38:](https://github.com/nico-richard/100-days-of-code/tree/master/day38) Workout Tracking Using Google Sheets
 -   [Day 39:](https://github.com/nico-richard/100-days-of-code/tree/master/day39) Capstone Part 1: Flight Deal Finder
 -   [Day 40:](https://github.com/nico-richard/100-days-of-code/tree/master/day40) Capstone Part 2: Flight Club
--   [Day 41:](https://github.com/nico-richard/100-days-of-code/tree/master/day41) Introduction to HTML
--   [Day 42:](https://github.com/nico-richard/100-days-of-code/tree/master/day42) Intermediate HTML
--   [Day 43:](https://github.com/nico-richard/100-days-of-code/tree/master/day43) Introduction to CSS
--   [Day 44:](https://github.com/nico-richard/100-days-of-code/tree/master/day44) Intermediate CSS
+-   Day 37: TODO Habit Tracking Project: API Post Requests & Headers
+-   Day 38: TODO Workout Tracking Using Google Sheets
+-   Day 39: TODO Capstone Part 1: Flight Deal Finder
+-   Day 40: TODO Capstone Part 2: Flight Club
+-   Day 41 : Introduction to HTML (no folder, just theory)
+-   Day 42 : Intermediate HTML (no folder, just theory)
+-   Day 43 : Introduction to CSS (no folder, just theory)
+-   Day 44 : Intermediate CSS (no folder, just theory)
 -   [Day 45:](https://github.com/nico-richard/100-days-of-code/tree/master/day45) Web Scraping with Beautiful Soup
 -   [Day 46:](https://github.com/nico-richard/100-days-of-code/tree/master/day46) Create a Spotify Playlist Using The Musical Time Machine
--   [Day 47:](https://github.com/nico-richard/100-days-of-code/tree/master/day47) Create an Automated Amazon Price Tracker
+-   Day 47: TODO Create an Automated Amazon Price Tracker
 -   [Day 48:](https://github.com/nico-richard/100-days-of-code/tree/master/day48) Selenium Webdriver Browser and Game Playing Bot
--   [Day 49:](https://github.com/nico-richard/100-days-of-code/tree/master/day49) Automating Job Applications on LinkedIn
--   [Day 50:](https://github.com/nico-richard/100-days-of-code/tree/master/day50) Auto Tinder Swiping Bot
--   [Day 51:](https://github.com/nico-richard/100-days-of-code/tree/master/day51) Internet Speed Twitter Complaint Bot
--   [Day 52:](https://github.com/nico-richard/100-days-of-code/tree/master/day52) Instagram Follower Bot
--   [Day 53:](https://github.com/nico-richard/100-days-of-code/tree/master/day53) Web Scraping Capstone - Data Entry Job Automation
+-   Day 49: TODO Automating Job Applications on LinkedIn
+-   Day 50: TODO Auto Tinder Swiping Bot
+-   Day 51: TODO Internet Speed Twitter Complaint Bot
+-   Day 52: TODO Instagram Follower Bot
+-   Day 53: TODO Web Scraping Capstone - Data Entry Job Automation
 -   [Day 54:](https://github.com/nico-richard/100-days-of-code/tree/master/day54) Introduction to Web Development with Flask
 -   [Day 55:](https://github.com/nico-richard/100-days-of-code/tree/master/day55) HTML & URL Parsing in Flask and the Higher Lower Game
 -   [Day 56:](https://github.com/nico-richard/100-days-of-code/tree/master/day56) Rendering HTML/Static Files and Using Website Templates
 -   [Day 57:](https://github.com/nico-richard/100-days-of-code/tree/master/day57) Templating with Jinja in Flask Applications
--   [Day 58:](https://github.com/nico-richard/100-days-of-code/tree/master/day58) Web Foundation Boostrap
+-   Day 58: Web Foundation Boostrap (skipped)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🏆 Advanced
 
--   [Day 59:](https://github.com/nico-richard/100-days-of-code/tree/master/day59) Blog Capstone Project Part 2 - Adding Styling
+-   Day 59: TODO Blog Capstone Project Part 2 - Adding Styling
 -   [Day 60:](https://github.com/nico-richard/100-days-of-code/tree/master/day60) Make POST Requests with Flask and HTML Forms
 -   [Day 61:](https://github.com/nico-richard/100-days-of-code/tree/master/day61) Building Advanced Forms with Flask-WTForms
 -   [Day 62:](https://github.com/nico-richard/100-days-of-code/tree/master/day62) Flask, WTForms, Bootstrap, and CSV - Coffee & Wifi Project
 -   [Day 63:](https://github.com/nico-richard/100-days-of-code/tree/master/day63) Databases and with SQLite and SQLAlchemy
 -   [Day 64:](https://github.com/nico-richard/100-days-of-code/tree/master/day64) My Top 10 Movies Website
--   [Day 65:](https://github.com/nico-richard/100-days-of-code/tree/master/day65) How to Create a Website That People Will Love
+-   Day 65: How to Create a Website That People Will Love (no folder, just theory)
 -   [Day 66:](https://github.com/nico-richard/100-days-of-code/tree/master/day66) Building Your Own API with RESTful Routing
 -   [Day 67:](https://github.com/nico-richard/100-days-of-code/tree/master/day67) Blog Capstone Project Part 3 - RESTful Routing
 -   [Day 68:](https://github.com/nico-richard/100-days-of-code/tree/master/day68) Authentication with Flask
 -   [Day 69:](https://github.com/nico-richard/100-days-of-code/tree/master/day69) Blog Capstone Project Part 4 - Adding Users
--   [Day 70:](https://github.com/nico-richard/100-days-of-code/tree/master/day70) Deploying Your Web Application with Heroku
+-   Day 70: Deploying Your Web Application with Heroku (no folder, just theory)
 -   [Day 71:](https://github.com/nico-richard/100-days-of-code/tree/master/day71) Data Exploration with Pandas: College Major vs. Your Salary
 -   [Day 72:](https://github.com/nico-richard/100-days-of-code/tree/master/day72) Data Visualisation with Matplotlib: Programming Languages
-<!-- -   [Day 73:](https://github.com/nico-richard/100-days-of-code/tree/master/day73) Aggregate & Marge Data with Pandas: Analyse the Lego Dataset
--   [Day 74:](https://github.com/nico-richard/100-days-of-code/tree/master/day74) Google Trends Data: Resampling and Visualising Time Series
--   [Day 75:](https://github.com/nico-richard/100-days-of-code/tree/master/day75) Beautiful Plotly Charts & Analysing the Android App Store
--   [Day 76:](https://github.com/nico-richard/100-days-of-code/tree/master/day76) Computation with NumPy and N-Dimensional Arrays
--   [Day 77:](https://github.com/nico-richard/100-days-of-code/tree/master/day77) Linear Regression and Data Visualisation with Seaborn
--   [Day 78:](https://github.com/nico-richard/100-days-of-code/tree/master/day78) Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
--   [Day 79:](https://github.com/nico-richard/100-days-of-code/tree/master/day79) The Tragic Discovery of Handwashing: t-Tests & Distributions
--   [Day 80:](https://github.com/nico-richard/100-days-of-code/tree/master/day80) Capstone Project - Predict House Prices -->
+-   Day 73: TODO Aggregate & Marge Data with Pandas: Analyse the Lego Dataset
+-   Day 74: TODO Google Trends Data: Resampling and Visualising Time Series
+-   Day 75: TODO Beautiful Plotly Charts & Analysing the Android App Store
+-   Day 76: TODO Computation with NumPy and N-Dimensional Arrays
+-   Day 77: TODO Linear Regression and Data Visualisation with Seaborn
+-   Day 78: TODO Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
+-   Day 79: TODO The Tragic Discovery of Handwashing: t-Tests & Distributions
+-   Day 80: TODO Capstone Project - Predict House Prices
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,26 +104,26 @@ The objective is to master Python by building 100 projects over 100 days.
 
 🏗️ _Under construction_ 🏗️
 
-<!-- -   [Day 81:](https://github.com/nico-richard/100-days-of-code/tree/master/day81) Text to Morse Code Converter
--   [Day 82:](https://github.com/nico-richard/100-days-of-code/tree/master/day82) Portfolio Website
--   [Day 83:](https://github.com/nico-richard/100-days-of-code/tree/master/day83) Tic Tac Toe
--   [Day 84:](https://github.com/nico-richard/100-days-of-code/tree/master/day84) Image Watermarking Desktop App
--   [Day 85:](https://github.com/nico-richard/100-days-of-code/tree/master/day85) Typing Speed Test App
--   [Day 86:](https://github.com/nico-richard/100-days-of-code/tree/master/day86) Breakout: The Famous Arcade Game
--   [Day 87:](https://github.com/nico-richard/100-days-of-code/tree/master/day87) Cafe and Wifi Website
--   [Day 88:](https://github.com/nico-richard/100-days-of-code/tree/master/day88) To Do Agenda App
--   [Day 89:](https://github.com/nico-richard/100-days-of-code/tree/master/day89) Disappearing Text Writing App
--   [Day 90:](https://github.com/nico-richard/100-days-of-code/tree/master/day90) Convert PDF to Audiobook
--   [Day 91:](https://github.com/nico-richard/100-days-of-code/tree/master/day91) Image to Color List
--   [Day 92:](https://github.com/nico-richard/100-days-of-code/tree/master/day92) Amazon Canada Web Scraper
--   [Day 93:](https://github.com/nico-richard/100-days-of-code/tree/master/day93) Google Dinosaur Game Bot
--   [Day 94:](https://github.com/nico-richard/100-days-of-code/tree/master/day94) Space Invaders
--   [Day 95:](https://github.com/nico-richard/100-days-of-code/tree/master/day95) Custom API
--   [Day 96:](https://github.com/nico-richard/100-days-of-code/tree/master/day96) An Online Shop
--   [Day 97:](https://github.com/nico-richard/100-days-of-code/tree/master/day97) Percentage Calculator
--   [Day 98:](https://github.com/nico-richard/100-days-of-code/tree/master/day98) Analyzing and Visualizing the Space Race
--   [Day 99:](https://github.com/nico-richard/100-days-of-code/tree/master/day99) Analyzing Deaths Involving Police in the United States
--   [Day 100:](https://github.com/nico-richard/100-days-of-code/tree/master/day100) Predicting Earnings using Multivariable Regression -->
+-   Day 81: TODO Text to Morse Code Converter
+-   Day 82: TODO Portfolio Website
+-   Day 83: TODO Tic Tac Toe
+-   Day 84: TODO Image Watermarking Desktop App
+-   Day 85: TODO Typing Speed Test App
+-   Day 86: TODO Breakout: The Famous Arcade Game
+-   Day 87: TODO Cafe and Wifi Website
+-   Day 88: TODO To Do Agenda App
+-   Day 89: TODO Disappearing Text Writing App
+-   Day 90: TODO Convert PDF to Audiobook
+-   Day 91: TODO Image to Color List
+-   Day 92: TODO Amazon Canada Web Scraper
+-   Day 93: TODO Google Dinosaur Game Bot
+-   Day 94: TODO Space Invaders
+-   Day 95: TODO Custom API
+-   Day 96: TODO An Online Shop
+-   Day 97: TODO Percentage Calculator
+-   Day 98: TODO Analyzing and Visualizing the Space Race
+-   Day 99: TODO Analyzing Deaths Involving Police in the United States
+-   Day 100: TODO Predicting Earnings using Multivariable Regression
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
