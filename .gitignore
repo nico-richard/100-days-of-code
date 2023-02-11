@@ -2,3 +2,9 @@ config.py
 .cache
 venv
 miscellaneous/
+__pycache__/
+.idea/
+.vscode/
+config/
+course_pledge.pdf
+list_of_skills.pdf
