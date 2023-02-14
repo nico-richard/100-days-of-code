@@ -46,10 +46,6 @@ The objective is to master Python by building 100 projects over 100 days.
 -   [Day 36:](https://github.com/nico-richard/100-days-of-code/tree/master/day36) Stock Trading News Alert Project
 -   [Day 37:](https://github.com/nico-richard/100-days-of-code/tree/master/day37) Habit Tracking Project: API Post Requests & Headers
 -   [Day 38:](https://github.com/nico-richard/100-days-of-code/tree/master/day38) Workout Tracking Using Google Sheets
--   [Day 39:](https://github.com/nico-richard/100-days-of-code/tree/master/day39) Capstone Part 1: Flight Deal Finder
--   [Day 40:](https://github.com/nico-richard/100-days-of-code/tree/master/day40) Capstone Part 2: Flight Club
--   Day 37: TODO Habit Tracking Project: API Post Requests & Headers
--   Day 38: TODO Workout Tracking Using Google Sheets
 -   Day 39: TODO Capstone Part 1: Flight Deal Finder
 -   Day 40: TODO Capstone Part 2: Flight Club
 -   Day 41 : Introduction to HTML (no folder, just theory)
@@ -182,7 +178,7 @@ Overall : ![65%](https://progress-bar.dev/65/)
 
 ### Intermediate+
 
-![77%](https://progress-bar.dev/77/) 20/26
+![70%](https://progress-bar.dev/77/) 19/27
 
 ### Advanced
 
