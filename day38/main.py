@@ -5,10 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv(r'C:\Users\nicol\Desktop\Development\100 days of code\day38\.env')
 
-# APP_ID = "9e0ccb74"
-# APP_KEY = "609b1821c3a23f46389c02a25e28cd47"
 # url = "https://trackapi.nutritionix.com/v2"
-# headers = {"x-app-id": APP_ID, "x-app-key": APP_KEY}
+# headers = {"x-app-id": os.environ.get('APP_ID'), "x-app-key": os.environ.get('APP_KEY')}
 # body = {"query": "run 1 hour"}
 
 # response = requests.post(url + '/natural/exercise', headers=headers, data=body)
