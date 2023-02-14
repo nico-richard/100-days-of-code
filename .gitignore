@@ -7,3 +7,4 @@ __pycache__/
 config/
 course_pledge.pdf
 list_of_skills.pdf
+.env

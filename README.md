@@ -198,6 +198,6 @@ Overall : ![65%](https://progress-bar.dev/65/)
 
 Nicolas RICHARD - nicolas.richard42@hotmail.fr
 
-Project Link: [https://github.com/nico-richard/randopost](https://github.com/nico-richard/randopost)
+<!-- Project Link: [https://github.com/nico-richard/randopost](https://github.com/nico-richard/randopost) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
